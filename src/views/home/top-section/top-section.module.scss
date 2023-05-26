@@ -1,0 +1,46 @@
+@import "../../../index.scss";
+
+.center {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height:110vh;
+    position: relative;
+
+    h1 {
+        font-size:3rem;
+        color: #878787;
+        mix-blend-mode: difference;
+    }
+
+    .bg {
+        position: absolute;
+        bottom: 0;
+        img {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .stars {
+        position: absolute;
+        z-index: -1;
+        animation: spinging 240s infinite ease;
+        width: 200vw;
+        height: 200vh;
+    }
+}
+
+
+@keyframes spinging {
+    0% {
+        rotate: 0;
+    }
+    100% {
+        rotate:360deg;
+    }
+}
